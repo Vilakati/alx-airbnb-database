@@ -61,3 +61,8 @@ CREATE TABLE Message (
     message_body TEXT NOT NULL,
     sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE INDEX idx_user_email ON User(email);
+CREATE INDEX idx_property_id ON Property(property_id);
+CREATE INDEX idx_booking_id ON Booking(booking_id);
+
